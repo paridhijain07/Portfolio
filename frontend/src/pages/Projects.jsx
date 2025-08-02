@@ -22,8 +22,8 @@ export default function Projects() {
                 "Instructor dashboards & revenue insights",
                 "Secure Cloudinary integration & OTP recovery"
               ]}
-              github="https://github.com/paridhijain/StudyPlus"
-              live="https://studyplus.vercel.app"
+              github="https://github.com/paridhijain07/Ed_Tech"
+              live="https://ed-tech-dusky-delta.vercel.app/"
             />
 
             <ProjectCard
@@ -37,7 +37,7 @@ export default function Projects() {
                 "Admin panel to manage system users",
                 "Analytics for appointments and donations"
               ]}
-              github="https://github.com/paridhijain/dirghayu-medicare"
+              github="https://github.com/paridhijain07/Dirghayu_medicare"
               live="https://dirghayu-medicare.vercel.app"
             />
             <ProjectCard
@@ -51,8 +51,8 @@ export default function Projects() {
     "Real-time rendering of added content",
     "Node + Express backend with MongoDB"
   ]}
-  github="https://github.com/paridhijain/sortify"
-  live="https://sortify-ai.vercel.app"
+  github="https://github.com/paridhijain07/Sortify"
+  live="https://github.com/paridhijain07/Sortify"
 />
 
           </div>

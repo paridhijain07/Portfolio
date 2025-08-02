@@ -8,16 +8,29 @@ body {
   from { width: 0 }
   to { width: 100% }
 }
+
 @keyframes blink {
-  50% { border-color: transparent }
+  50% { opacity: 0; }
+}
+
+.typing-wrapper {
+  display: inline-flex;
+  align-items: center;
 }
 
 .typing {
   overflow: hidden;
   white-space: nowrap;
+  animation: typing 2s steps(30, end) forwards;
+  display: inline-block;
+  width: 0; /* required for typing effect */
+}
+
+.cursor {
+  width: 3px; /* 👈 Add this line */
   border-right: 3px solid #00ff88;
-  animation:
-    typing 2s steps(30, end) forwards,
-    blink 1s step-end infinite;
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 2px;
+  height: 1.2em;
 }
 

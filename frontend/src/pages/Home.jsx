@@ -16,9 +16,10 @@ export default function Home() {
               <span className="text-green-400">const</span>{' '}
               <span className="text-blue-400">name</span>{' '}
               <span className="text-white">=</span>{' '}
-              <span className="text-yellow-300 text-2xl md:text-4xl font-bold typing block max-w-full drop-shadow-[0_0_6px_#facc15]">
+              <span className="text-yellow-300 text-3xl md:text-5xl font-extrabold typing block drop-shadow-[0_0_6px_#facc15]">
                 "Paridhi Jain"
               </span>;
+              <span className="cursor"></span>
             </div>
 
             <p className="text-terminaltext text-sm md:text-base mb-2">
@@ -28,32 +29,33 @@ export default function Home() {
               {'// 3rd Year B.Tech IT Student @ IIITM Gwalior'}
             </p>
 
+            {/* Contact Function */}
             <div className="mb-6">
-  <span className="text-green-400">function</span>{' '}
-  <span className="text-blue-400">contact</span>() {'{'}
-  <div className="ml-4">
-    <span className="text-white">return</span> {'{'}
-    <div className="ml-4">
-      <div>
-        <span className="text-purple-400">email</span>: <span className="text-yellow-300">"technologywithparidhi@gmail.com"</span>,
-      </div>
-      <div>
-        <span className="text-purple-400">phone</span>: <span className="text-yellow-300">"+91-8085805313"</span>
-      </div>
-    </div>
-    {'};'}
-  </div>
-  {'}'}
-</div>
+              <span className="text-green-400">function</span>{' '}
+              <span className="text-blue-400">contact</span>() {'{'}
+              <div className="ml-6">
+                <span className="text-white">return</span> {'{'}
+                <div className="ml-6">
+                  <div>
+                    <span className="text-purple-400">email</span>: <span className="text-yellow-300">"technologywithparidhi@gmail.com"</span>,
+                  </div>
+                  <div>
+                    <span className="text-purple-400">phone</span>: <span className="text-yellow-300">"+91-8085805313"</span>
+                  </div>
+                </div>
+                {'};'}
+              </div>
+              {'}'}
+            </div>
 
-
+            {/* Socials Object */}
             <div>
               <span className="text-green-400">const</span>{' '}
               <span className="text-blue-400">socials</span>{' '}
               <span className="text-white">=</span> {'{'}
-              <div className="ml-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-purple-400">github</span>:{' '}
+              <div className="ml-6 space-y-2 mt-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-purple-400">github</span>:{" "}
                   <a
                     href="https://github.com/paridhijain07"
                     target="_blank"
@@ -65,19 +67,19 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-purple-400">linkedin</span>:{' '}
+                  <span className="text-purple-400">linkedin</span>:{" "}
                   <a
-                    href="www.linkedin.com/in/paridhi-jain-969178297"
+                    href="https://www.linkedin.com/in/paridhi-jain-969178297"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1 text-gray-200 hover:text-gray-400 transition-colors"
                   >
                     <FaLinkedin className="text-blue-400" />
-                    <span>"www.linkedin.com/in/paridhi-jain-969178297"</span>
+                    <span>"linkedin.com/in/paridhi-jain-969178297"</span>
                   </a>
                 </div>
               </div>
-              {'}'};
+              {'};'}
             </div>
           </div>
 
@@ -98,9 +100,9 @@ export default function Home() {
 function NavCard({ to, icon, label }) {
   return (
     <Link to={to}>
-      <div className="cursor-pointer bg-[#21262d] hover:bg-[#2c313a] transition rounded-lg p-4 flex items-center gap-3 text-terminaltext text-sm shadow-md hover:shadow-lg">
+      <div className="cursor-pointer bg-[#21262d] hover:bg-[#2c313a] transition rounded-lg p-4 flex items-center gap-3 text-terminaltext text-sm shadow-md hover:shadow-lg hover:scale-[1.03] duration-200">
         <div className="text-xl text-green-400">{icon}</div>
-        <span>{label}</span>
+        <span className="text-white font-medium">{label}</span>
       </div>
     </Link>
   );
