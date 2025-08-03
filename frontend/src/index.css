@@ -21,16 +21,15 @@ body {
 .typing {
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(30, end) forwards;
+  animation: typing 2.5s steps(30, end) forwards;
   display: inline-block;
-  width: 0; /* required for typing effect */
+  width: 0;
 }
 
 .cursor {
-  width: 3px; /* 👈 Add this line */
+  width: 3px;
   border-right: 3px solid #00ff88;
-  animation: blink 0.7s steps(1) infinite;
+  animation: blink 0.8s step-end infinite;
   margin-left: 2px;
   height: 1.2em;
 }
-

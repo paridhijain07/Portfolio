@@ -16,10 +16,11 @@ export default function Home() {
               <span className="text-green-400">const</span>{' '}
               <span className="text-blue-400">name</span>{' '}
               <span className="text-white">=</span>{' '}
-              <span className="text-yellow-300 text-3xl md:text-5xl font-extrabold typing block drop-shadow-[0_0_6px_#facc15]">
-                "Paridhi Jain"
-              </span>;
-              <span className="cursor"></span>
+              <div className="typing-wrapper text-yellow-300 text-3xl md:text-5xl font-extrabold drop-shadow-[0_0_6px_#facc15]">
+                <span className="typing">"Paridhi Jain"</span>
+                <span className="cursor"></span>
+              </div>
+              ;
             </div>
 
             <p className="text-terminaltext text-sm md:text-base mb-2">
